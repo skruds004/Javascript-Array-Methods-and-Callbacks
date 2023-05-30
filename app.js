@@ -45,5 +45,16 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 // // 2. Log each word with an ! at the end of it
 // ////////////////////////////////
 
-nums.forEach(num => console.log(num * 3));
-panagram.forEach(word => console.log(word + '!'));
+// nums.forEach(num => console.log(num * 3));
+// panagram.forEach(word => console.log(word + '!'));
+
+//////////////////////////////////////
+// MAP:
+// 1. Make a new array of each number multiplied by 100
+// 2. Make a new array of all the words in all upper case
+//////////////////////////////////////
+
+const newMap = nums.map(num => num * 100);
+const bigWords = panagram.map(word => word.toUpperCase());
+console.log(newMap);
+console.log(bigWords);
