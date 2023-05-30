@@ -9,3 +9,12 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 
 console.log(nums.every(num => num >= 0));
 console.log(panagram.every(word => word.length <= 8));
+
+////////////////////////////////
+// FILTER:
+// 1. Filter the array for numbers less than 4
+// 2. Filter words that have an even length
+////////////////////////////////
+
+console.log(nums.filter(num => num < 4));
+console.log(panagram.filter(word => word.length % 2 === 0));
