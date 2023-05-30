@@ -29,4 +29,14 @@ console.log(nums.find(num => num % 5 === 0));
 //no words longer than 5 characters
 console.log(panagram.find(word => word.length > 5));
 
+/////////////////////////////////
+// FIND INDEX:
+// 1. Find the index of the first value divisible by 3
+// 2. Find the index of the first word that is less than 2 characters long
+////////////////////////////////
 
+console.log(nums.findIndex(num => num % 3 === 0));
+//no words that are less than 2 characters long
+console.log(panagram.findIndex(word => word.length < 2));
+
+//////////////////////////////////
