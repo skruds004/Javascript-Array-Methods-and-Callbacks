@@ -88,10 +88,29 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 // 6. Sort the panagram in descending order
 //////////////////////////////////////
 
-console.log(nums.sort());
-console.log(panagram.sort());
-console.log(nums.sort((a, b) => a - b));
-console.log(nums.sort((a, b) => b - a));
-console.log(panagram.sort((a, b) => a.localeCompare(b)));
-console.log(panagram.sort((a, b) => b.localeCompare(a)));
+// console.log(nums.sort());
+// console.log(panagram.sort());
+// console.log(nums.sort((a, b) => a - b));
+// console.log(nums.sort((a, b) => b - a));
+// console.log(panagram.sort((a, b) => a.localeCompare(b)));
+// console.log(panagram.sort((a, b) => b.localeCompare(a)));
+
+////////////////////////////////
+// isPanagram:
+// Check whether each letter is used at least once in the panagram
+/////////////////////////////////
+
+let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+let sentence = panagram.join('').toLowerCase();
+for (let i = 0; i < sentence.length; i++) {
+    alphabet = alphabet.replace(sentence[i], '');
+}
+
+if(!alphabet) {
+    console.log("It is a panagram");
+}
+else {
+    console.log("It is not a panagram");
+}
+
 
