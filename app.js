@@ -18,3 +18,15 @@ console.log(panagram.every(word => word.length <= 8));
 
 console.log(nums.filter(num => num < 4));
 console.log(panagram.filter(word => word.length % 2 === 0));
+
+////////////////////////////////
+// FIND: 
+// 1. Find the first value divisible by 5
+// 2. Find the first word longer than 5 characters
+////////////////////////////////
+
+console.log(nums.find(num => num % 5 === 0));
+//no words longer than 5 characters
+console.log(panagram.find(word => word.length > 5));
+
+
