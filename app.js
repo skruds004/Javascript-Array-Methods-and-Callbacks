@@ -58,3 +58,13 @@ const newMap = nums.map(num => num * 100);
 const bigWords = panagram.map(word => word.toUpperCase());
 console.log(newMap);
 console.log(bigWords);
+
+//////////////////////////////////////
+// SOME:
+// 1. Find out if some of the numbers are divisible by 7
+// 2. Find out if some words have the letter 'a' in them
+//////////////////////////////////////
+
+//this will always evaluate to true as 0 % any number is 0
+console.log(nums.some(num => num % 7 === 0));
+console.log(panagram.some(word => word.includes('a')));
