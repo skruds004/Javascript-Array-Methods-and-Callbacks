@@ -48,23 +48,50 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 // nums.forEach(num => console.log(num * 3));
 // panagram.forEach(word => console.log(word + '!'));
 
-//////////////////////////////////////
-// MAP:
-// 1. Make a new array of each number multiplied by 100
-// 2. Make a new array of all the words in all upper case
+// //////////////////////////////////////
+// // MAP:
+// // 1. Make a new array of each number multiplied by 100
+// // 2. Make a new array of all the words in all upper case
+// //////////////////////////////////////
+
+// const newMap = nums.map(num => num * 100);
+// const bigWords = panagram.map(word => word.toUpperCase());
+// console.log(newMap);
+// console.log(bigWords);
+
+// //////////////////////////////////////
+// // SOME:
+// // 1. Find out if some of the numbers are divisible by 7
+// // 2. Find out if some words have the letter 'a' in them
+// //////////////////////////////////////
+
+// //this will always evaluate to true as 0 % any number is 0
+// console.log(nums.some(num => num % 7 === 0));
+// console.log(panagram.some(word => word.includes('a')));
+
+// ////////////////////////////////////////
+// // REDUCE: 
+// // 1. Add all of the numbers together
+// // 2. Concatenate all of the words together
+// ///////////////////////////////////
+
+// console.log(nums.reduce((a, b) => a + b));
+// console.log(panagram.reduce((a, b) => a + b));
+
+/////////////////////////////////////////
+// SORT:
+// 1. Sort the number array without any arguments
+// 2. Sort the panagram array without any arguments
+// 3. Sort the numbers in ascending order
+// 4. Sort the numbers in descending order
+// 5. Sort the panagram in ascending order
+// 6. Sort the panagram in descending order
 //////////////////////////////////////
 
-const newMap = nums.map(num => num * 100);
-const bigWords = panagram.map(word => word.toUpperCase());
-console.log(newMap);
-console.log(bigWords);
+console.log(nums.sort());
+console.log(panagram.sort());
+console.log(nums.sort((a, b) => a - b));
+console.log(nums.sort((a, b) => b - a));
+console.log(panagram.sort((a, b) => a.localeCompare(b)));
+console.log(panagram.sort((a, b) => b.localeCompare(a)));
 
-//////////////////////////////////////
-// SOME:
-// 1. Find out if some of the numbers are divisible by 7
-// 2. Find out if some words have the letter 'a' in them
-//////////////////////////////////////
-
-//this will always evaluate to true as 0 % any number is 0
-console.log(nums.some(num => num % 7 === 0));
-console.log(panagram.some(word => word.includes('a')));
